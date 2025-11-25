@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+nav {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+nav h1 {
+  margin-bottom: 10px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 15px;
+  margin: 5px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+nav a:hover {
+  background: #0056b3;
+}
+
+.page {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #007bff;
+  color: white;
+}
+
+form {
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.alterar-btn {
+  background: #ffc107;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.status-badge {
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.status-aberto {
+  background: #dc3545;
+  color: white;
+}
+
+.status-em-atendimento {
+  background: #ffc107;
+  color: black;
+}
+
+.status-resolvido {
+  background: #28a745;
+  color: white;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+.success {
+  color: green;
+  margin-top: 10px;
+}

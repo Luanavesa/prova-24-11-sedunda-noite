@@ -1,0 +1,39 @@
+### Listar todos
+GET http://localhost:5000/api/chamado/listar
+
+###
+
+### Cadastrar
+POST http://localhost:5000/api/chamado/cadastrar
+Content-Type: application/json
+
+{
+  "Descricao": "Mouse quebrado"
+}
+
+###
+
+### Alterar status
+PATCH http://localhost:5000/api/chamado/alterar
+Content-Type: application/json
+
+{
+  "ChamadoId": "COLOCAR_ID_AQUI"
+}
+
+###
+
+### Nao resolvidos
+GET http://localhost:5000/api/chamado/naoresolvido
+
+###
+
+### Abertos
+GET http://localhost:5000/api/chamado/abertos
+
+###
+
+### Resolvidos
+GET http://localhost:5000/api/chamado/resolvidos
+
+###
