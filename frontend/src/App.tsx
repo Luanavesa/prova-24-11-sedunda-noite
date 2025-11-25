@@ -109,10 +109,16 @@ function CadastrarPage() {
           setMessage('Chamado cadastrado!');
           setDescricao('');
         } else {
-          setMessage('Erro ao cadastrar');
+          return res.text().then(text => {
+            console.error('Erro:', text);
+            setMessage('Erro ao cadastrar: ' + text);
+          });
         }
       })
-      .catch(() => setMessage('Erro ao cadastrar'));
+      .catch(err => {
+        console.error('Erro de rede:', err);
+        setMessage('Erro ao cadastrar: ' + err.message);
+      });
   };
 
   return (
